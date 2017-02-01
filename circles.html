@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="assets/js/lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/lib/paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/circles.css">
+
+	<script type="text/paperscript" canvas="myCanvas">
+		<!-- for (var x = 0; x < 1000; x+=100)
+		{			
+			for (var y = 0; y < 1000; y+=100)
+			{
+				var rgbColor = "rgb(" + pickColor(256) + ", " + pickColor(256) + ", " + pickColor(256) + ")";
+				new Path.Circle(new Point(x, y), 10).fillColor = rgbColor;
+			}
+		} -->
+
+		function onKeyDown(event) {
+			new Path.Circle(new Point(100, 100), 10).fillColor = "orange";
+		}
+
+
+		<!-- function pickColor(numColors){
+			var random = Math.floor(Math.random() * numColors);
+
+			//console.log(random);
+			return random;
+		} -->
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+
+	<script type="text/javascript" src="assets/js/circles.js"></script>
+</body>
+</html>
